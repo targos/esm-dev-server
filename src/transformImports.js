@@ -28,7 +28,7 @@ function transformImports(basedir, { types: t }) {
         const moduleSpecifier = source.value;
         debug('module specifier:', moduleSpecifier);
         try {
-            const resolved = resolve(moduleSpecifier, {basedir});
+            const resolved = resolve(moduleSpecifier, {basedir, extensions: ['.mjs', '.js']});
             debug('resolved:', resolved);
             const relativePath = relative(basedir, resolved).replace(regSep, '/');
             debug('relative', relativePath);
