@@ -1,0 +1,32 @@
+{
+  "name": "esm-dev-server",
+  "version": "1.0.0",
+  "description": "experiment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env DEBUG=esm-dev-server* nodemon server.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/targos/esm-dev-server.git"
+  },
+  "keywords": [],
+  "author": "Michaël Zasso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/targos/esm-dev-server/issues"
+  },
+  "homepage": "https://github.com/targos/esm-dev-server#readme",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/preset-react": "^7.0.0-beta.32",
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "resolve": "^1.5.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1",
+    "nodemon": "^1.12.1"
+  }
+}
